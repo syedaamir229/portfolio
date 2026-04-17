@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+    <marker id="a2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a1a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="440" rx="12" fill="#ffffff"/>
+  <text x="460" y="35" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">CRM Campaign Automation Architecture</text>
+
+  <!-- User trigger -->
+  <rect x="360" y="55" width="200" height="35" rx="6" fill="#f0f0f5" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="460" y="77" text-anchor="middle" font-size="10" font-weight="600" fill="#1a1a2e">CRM Analyst / Campaign Manager</text>
+
+  <line x1="460" y1="90" x2="460" y2="115" stroke="#1a1a2e" stroke-width="1.5" marker-end="url(#a2)"/>
+
+  <!-- Data Layer (left) -->
+  <rect x="30" y="130" width="200" height="200" rx="8" fill="#0f9b8e" fill-opacity="0.08" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="130" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#0f9b8e">Data Layer</text>
+
+  <rect x="45" y="170" width="170" height="28" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="130" y="189" text-anchor="middle" font-size="9" fill="#0a7a6f">Subscriber Features</text>
+
+  <rect x="45" y="205" width="170" height="28" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="130" y="224" text-anchor="middle" font-size="9" fill="#0a7a6f">Cluster Assignments</text>
+
+  <rect x="45" y="240" width="170" height="28" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="130" y="259" text-anchor="middle" font-size="9" fill="#0a7a6f">Behavior Signals</text>
+
+  <rect x="45" y="275" width="170" height="28" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="130" y="294" text-anchor="middle" font-size="9" fill="#0a7a6f">Subscription Lifecycle</text>
+
+  <rect x="45" y="310" width="170" height="14" rx="3" fill="none"/>
+  <text x="130" y="322" text-anchor="middle" font-size="8" fill="#666">Enterprise Data Model + Gold Layer</text>
+
+  <!-- Arrow: Data to Scenario Engine -->
+  <line x1="230" y1="230" x2="270" y2="230" stroke="#0f9b8e" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- Scenario Engine (center) -->
+  <rect x="280" y="120" width="280" height="230" rx="10" fill="#1a1a2e"/>
+  <text x="420" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Scenario Engine</text>
+
+  <rect x="300" y="165" width="240" height="28" rx="5" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="420" y="183" text-anchor="middle" font-size="10" fill="#0f9b8e">Cluster-Based Rules</text>
+
+  <rect x="300" y="200" width="240" height="28" rx="5" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="420" y="218" text-anchor="middle" font-size="10" fill="#0f9b8e">Behavior-Based Rules</text>
+
+  <rect x="300" y="235" width="240" height="28" rx="5" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="420" y="253" text-anchor="middle" font-size="10" fill="#0f9b8e">Recency &amp; Eligibility Filters</text>
+
+  <rect x="300" y="270" width="240" height="28" rx="5" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="420" y="288" text-anchor="middle" font-size="10" fill="#0f9b8e">Title Exposure Checks</text>
+
+  <rect x="300" y="305" width="240" height="28" rx="5" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="420" y="323" text-anchor="middle" font-size="10" fill="#0f9b8e">Scenario Templates</text>
+
+  <!-- Arrow: Scenario to CleverTap -->
+  <line x1="560" y1="230" x2="620" y2="230" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#a1)"/>
+  <text x="590" y="220" text-anchor="middle" font-size="8" fill="#0f9b8e">Audience</text>
+  <text x="590" y="245" text-anchor="middle" font-size="8" fill="#0f9b8e">Push (API)</text>
+
+  <!-- CleverTap -->
+  <rect x="630" y="155" width="160" height="150" rx="10" fill="#E8912D" fill-opacity="0.12" stroke="#E8912D" stroke-width="1.5"/>
+  <text x="710" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#C07722">CleverTap</text>
+  <text x="710" y="198" text-anchor="middle" font-size="9" fill="#666">CRM Platform</text>
+
+  <rect x="645" y="210" width="130" height="24" rx="4" fill="#fff4e6" stroke="#E8912D" stroke-width="1"/>
+  <text x="710" y="226" text-anchor="middle" font-size="9" fill="#C07722">Scheduled Campaigns</text>
+
+  <rect x="645" y="240" width="130" height="24" rx="4" fill="#fff4e6" stroke="#E8912D" stroke-width="1"/>
+  <text x="710" y="256" text-anchor="middle" font-size="9" fill="#C07722">Push / Email / SMS</text>
+
+  <rect x="645" y="270" width="130" height="24" rx="4" fill="#fff4e6" stroke="#E8912D" stroke-width="1"/>
+  <text x="710" y="286" text-anchor="middle" font-size="9" fill="#C07722">Engagement Events</text>
+
+  <!-- Feedback loop -->
+  <path d="M 710 305 L 710 390 L 420 390 L 420 355" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-dasharray="6,3" marker-end="url(#a2)"/>
+  <text x="565" y="383" text-anchor="middle" font-size="9" fill="#1a1a2e">Campaign Performance Feedback Loop</text>
+
+  <!-- Campaign Analytics -->
+  <rect x="820" y="190" width="85" height="80" rx="8" fill="#1a1a2e"/>
+  <text x="863" y="220" text-anchor="middle" font-size="9" fill="#ffffff">Campaign</text>
+  <text x="863" y="235" text-anchor="middle" font-size="9" fill="#ffffff">Analytics</text>
+  <text x="863" y="255" text-anchor="middle" font-size="8" fill="#16c2b0">Power BI</text>
+
+  <line x1="790" y1="230" x2="820" y2="230" stroke="#0f9b8e" stroke-width="1.5" marker-end="url(#a1)"/>
+
+  <!-- Footer -->
+  <text x="460" y="425" text-anchor="middle" font-size="10" fill="#999">Python + Databricks + CleverTap API + Power BI</text>
+</svg>

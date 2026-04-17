@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+    <marker id="ar2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a1a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="460" rx="12" fill="#ffffff"/>
+  <text x="460" y="35" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Voice-of-Customer Intelligence Platform</text>
+
+  <!-- Social Platforms (top left) -->
+  <rect x="30" y="65" width="150" height="160" rx="8" fill="#f0f0f5" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="105" y="90" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a2e">Social Platforms</text>
+
+  <rect x="45" y="105" width="120" height="28" rx="5" fill="#1a1a2e"/>
+  <text x="105" y="123" text-anchor="middle" font-size="9" fill="#ffffff">Platform A</text>
+
+  <rect x="45" y="140" width="120" height="28" rx="5" fill="#1a1a2e"/>
+  <text x="105" y="158" text-anchor="middle" font-size="9" fill="#ffffff">Platform B</text>
+
+  <rect x="45" y="175" width="120" height="28" rx="5" fill="#1a1a2e"/>
+  <text x="105" y="193" text-anchor="middle" font-size="9" fill="#ffffff">Platform C</text>
+
+  <!-- Arrow -->
+  <line x1="180" y1="145" x2="225" y2="145" stroke="#0f9b8e" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- Ingestion -->
+  <rect x="235" y="90" width="150" height="110" rx="8" fill="#0f9b8e" fill-opacity="0.08" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="310" y="115" text-anchor="middle" font-size="11" font-weight="600" fill="#0f9b8e">Ingestion</text>
+
+  <rect x="250" y="128" width="120" height="24" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="310" y="144" text-anchor="middle" font-size="9" fill="#0a7a6f">Schema Standardization</text>
+
+  <rect x="250" y="158" width="120" height="24" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="310" y="174" text-anchor="middle" font-size="9" fill="#0a7a6f">Raw Comments Table</text>
+
+  <!-- Arrow -->
+  <line x1="385" y1="145" x2="430" y2="145" stroke="#0f9b8e" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- NLP Processing -->
+  <rect x="440" y="70" width="170" height="150" rx="8" fill="#1a1a2e"/>
+  <text x="525" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">NLP Pipeline</text>
+
+  <rect x="455" y="110" width="140" height="26" rx="4" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="525" y="127" text-anchor="middle" font-size="9" fill="#0f9b8e">Arabic Translation</text>
+
+  <rect x="455" y="142" width="140" height="26" rx="4" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="525" y="159" text-anchor="middle" font-size="9" fill="#0f9b8e">Text Enrichment</text>
+
+  <rect x="455" y="174" width="140" height="26" rx="4" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="525" y="191" text-anchor="middle" font-size="9" fill="#0f9b8e">Structured Comments</text>
+
+  <!-- Arrow down to query layer -->
+  <line x1="525" y1="220" x2="525" y2="260" stroke="#0f9b8e" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- Query Layer -->
+  <rect x="100" y="270" width="720" height="100" rx="10" fill="#0f9b8e" fill-opacity="0.06" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="460" y="295" text-anchor="middle" font-size="12" font-weight="600" fill="#0f9b8e">Natural Language Query Layer</text>
+
+  <rect x="120" y="310" width="180" height="45" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="210" y="330" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Comments Genie Space</text>
+  <text x="210" y="347" text-anchor="middle" font-size="8" fill="#666">Comment exploration &amp; search</text>
+
+  <rect x="330" y="310" width="180" height="45" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="420" y="330" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Engagement Genie Space</text>
+  <text x="420" y="347" text-anchor="middle" font-size="8" fill="#666">Engagement metrics query</text>
+
+  <rect x="540" y="310" width="180" height="45" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="630" y="330" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Retrieval Agent</text>
+  <text x="630" y="347" text-anchor="middle" font-size="8" fill="#666">Semantic search (RAG)</text>
+
+  <!-- Arrows converge down -->
+  <line x1="210" y1="355" x2="210" y2="385" stroke="#0f9b8e" stroke-width="1.5"/>
+  <line x1="420" y1="355" x2="420" y2="385" stroke="#0f9b8e" stroke-width="1.5"/>
+  <line x1="630" y1="355" x2="630" y2="385" stroke="#0f9b8e" stroke-width="1.5"/>
+  <line x1="210" y1="385" x2="630" y2="385" stroke="#0f9b8e" stroke-width="1.5"/>
+  <line x1="420" y1="385" x2="420" y2="400" stroke="#0f9b8e" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- Chat Interface -->
+  <rect x="330" y="405" width="180" height="40" rx="8" fill="#1a1a2e"/>
+  <text x="420" y="425" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Chat Interface</text>
+  <text x="420" y="439" text-anchor="middle" font-size="8" fill="#16c2b0">Databricks App</text>
+
+  <!-- Business User (right) -->
+  <rect x="750" y="395" width="140" height="40" rx="6" fill="#f0f0f5" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="820" y="415" text-anchor="middle" font-size="10" font-weight="600" fill="#1a1a2e">Business User</text>
+  <text x="820" y="429" text-anchor="middle" font-size="8" fill="#666">Self-Service Analysis</text>
+
+  <line x1="510" y1="425" x2="750" y2="420" stroke="#1a1a2e" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ar2)"/>
+
+  <!-- Engagement data source (right side) -->
+  <rect x="750" y="90" width="140" height="70" rx="8" fill="#0f9b8e" fill-opacity="0.08" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="820" y="115" text-anchor="middle" font-size="10" font-weight="600" fill="#0f9b8e">Engagement Data</text>
+  <text x="820" y="132" text-anchor="middle" font-size="9" fill="#666">Sessions, Subs,</text>
+  <text x="820" y="146" text-anchor="middle" font-size="9" fill="#666">Content Metrics</text>
+
+  <line x1="820" y1="160" x2="820" y2="270" stroke="#0f9b8e" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#ar)"/>
+</svg>

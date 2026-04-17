@@ -1,0 +1,136 @@
+site_name: Syed Aamir
+site_description: "Data & AI Solutions Engineer | Helping businesses turn data into intelligent, automated systems"
+site_url: https://syedaamir229.github.io/
+
+nav:
+  - Home: index.md
+  - Projects:
+    - Overview: projects/index.md
+    - Delivery Patterns: projects/patterns.md
+    - Featured Projects:
+      - Enterprise Data Model: projects/data-model.md
+      - Semantic Layer & KPI Framework: projects/semantic-layer.md
+      - Revenue Ops Pipeline: projects/ad-pipeline.md
+      - BI Modernization Roadmap: projects/bi-migration.md
+      - CRM Automation: projects/jarvis.md
+      - Voice-of-Customer Platform: projects/enigma.md
+    - More Projects:
+      - Profile-Level Feature Store: projects/profile-features.md
+      - Viewing Behavior Clustering: projects/clustering.md
+      - Attribute Inference: projects/gender-prediction.md
+      - Additional ML Contributions: projects/ml-contributions.md
+      - Enterprise BI Suite (Consulting): projects/enterprise-bi-suite.md
+      - Executive KPI Dashboard Suite: projects/jlr-dashboards.md
+      - Financial Reporting: projects/adani-reporting.md
+      - Multi-Dept BI Architecture: projects/alfuttaim-bi.md
+  - Experience: resume/index.md
+  - Blog:
+    - blog/index.md
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - toc.integrate
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - content.tooltips
+    - content.tabs.link
+    - content.code.copy
+    - navigation.footer
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: custom
+      accent: custom
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: custom
+      accent: custom
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/syedaamiruddin/
+    - icon: fontawesome/brands/github
+      link: https://github.com/syedaamir229
+    - icon: fontawesome/solid/chart-simple
+      link: https://public.tableau.com/app/profile/syed.aamir/vizzes
+    - icon: fontawesome/solid/envelope
+      link: mailto:saamir259@gmail.com
+  analytics:
+    # provider: google
+    # property: G-XXXXXXXXXX
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/hero.css
+  - stylesheets/blog.css
+  - stylesheets/resume.css
+
+plugins:
+  - search
+  - tags
+  - glightbox:
+      skip_classes:
+        - company-logo
+  - social:
+      cards_layout_options:
+        background_color: "#1a1a2e"
+  - blog:
+      blog_dir: blog
+      authors_file: "{blog}/.authors.yml"
+      categories: true
+      categories_allowed:
+        - BI & Analytics
+        - Data Engineering
+        - Data Science
+        - AI & Automation
+        - Data Governance
+        - Data Modeling
+        - Career
+      post_excerpt: required
+      post_excerpt_separator: "<!-- more -->"
+      archive_date_format: yyyy
+      pagination_per_page: 6
+      post_readtime: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.keys
+
+copyright: |
+  &copy; 2024–2026 <a href="https://www.linkedin.com/in/syedaamiruddin/" target="_blank" rel="noopener">Syed Aamir</a>. All rights reserved.

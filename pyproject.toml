@@ -1,0 +1,10 @@
+[project]
+name = "mkdocs-website-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.11.0"
+dependencies = [
+    "mkdocs-material[imaging]>=9.6.9",
+    "mkdocs-glightbox>=0.4.0",
+]

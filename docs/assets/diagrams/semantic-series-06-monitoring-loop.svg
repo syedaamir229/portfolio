@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arrow6" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <rect width="940" height="430" rx="12" fill="#ffffff"/>
+  <text x="470" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Performance Monitoring Feedback Loop</text>
+
+  <rect x="45" y="78" width="180" height="150" rx="10" fill="#f5f6fa" stroke="#d8dbe6"/>
+  <text x="135" y="102" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Signal Sources</text>
+  <text x="60" y="126" font-size="9" fill="#1a1a2e">- query durations</text>
+  <text x="60" y="142" font-size="9" fill="#1a1a2e">- memory and CPU counters</text>
+  <text x="60" y="158" font-size="9" fill="#1a1a2e">- partition process times</text>
+  <text x="60" y="174" font-size="9" fill="#1a1a2e">- refresh failure events</text>
+  <text x="60" y="190" font-size="9" fill="#1a1a2e">- report metadata</text>
+
+  <rect x="270" y="78" width="180" height="150" rx="10" fill="#eef9f7" stroke="#9ed9d2"/>
+  <text x="360" y="102" text-anchor="middle" font-size="11" font-weight="700" fill="#0a7a6f">Monitoring Store</text>
+  <text x="285" y="126" font-size="9" fill="#0a7a6f">- metrics tables</text>
+  <text x="285" y="142" font-size="9" fill="#0a7a6f">- partition metadata</text>
+  <text x="285" y="158" font-size="9" fill="#0a7a6f">- historical baselines</text>
+  <text x="285" y="174" font-size="9" fill="#0a7a6f">- SLA thresholds</text>
+  <text x="285" y="190" font-size="9" fill="#0a7a6f">- ownership mapping</text>
+
+  <rect x="495" y="78" width="180" height="150" rx="10" fill="#eef9f7" stroke="#9ed9d2"/>
+  <text x="585" y="102" text-anchor="middle" font-size="11" font-weight="700" fill="#0a7a6f">Detection Layer</text>
+  <text x="510" y="126" font-size="9" fill="#0a7a6f">- anomaly checks</text>
+  <text x="510" y="142" font-size="9" fill="#0a7a6f">- failed refresh alerts</text>
+  <text x="510" y="158" font-size="9" fill="#0a7a6f">- slow query alerts</text>
+  <text x="510" y="174" font-size="9" fill="#0a7a6f">- capacity trend flags</text>
+  <text x="510" y="190" font-size="9" fill="#0a7a6f">- stale partition checks</text>
+
+  <rect x="720" y="78" width="180" height="150" rx="10" fill="#1a1a2e" stroke="#0f9b8e" stroke-width="2"/>
+  <text x="810" y="102" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Optimization Actions</text>
+  <text x="735" y="126" font-size="9" fill="#16c2b0">- tune DAX measures</text>
+  <text x="735" y="142" font-size="9" fill="#16c2b0">- adjust partition windows</text>
+  <text x="735" y="158" font-size="9" fill="#16c2b0">- optimize relationships</text>
+  <text x="735" y="174" font-size="9" fill="#16c2b0">- reduce heavy visuals</text>
+  <text x="735" y="190" font-size="9" fill="#16c2b0">- update runbook controls</text>
+
+  <line x1="225" y1="153" x2="270" y2="153" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow6)"/>
+  <line x1="450" y1="153" x2="495" y2="153" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow6)"/>
+  <line x1="675" y1="153" x2="720" y2="153" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow6)"/>
+
+  <path d="M810 228 C 810 302, 130 302, 130 228" fill="none" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow6)"/>
+  <text x="470" y="322" text-anchor="middle" font-size="10" fill="#0a7a6f">Monitoring is effective only when it drives action and model improvement</text>
+
+  <rect x="140" y="345" width="660" height="48" rx="8" fill="#f5f6fa" stroke="#d8dbe6"/>
+  <text x="470" y="366" text-anchor="middle" font-size="10" fill="#1a1a2e">Practical outputs: query SLA dashboard, incident tracker, weekly optimization review</text>
+  <text x="470" y="382" text-anchor="middle" font-size="9" fill="#7b8096">This is how semantic layer operations move from reactive firefighting to planned reliability</text>
+</svg>
