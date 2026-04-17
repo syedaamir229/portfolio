@@ -1,0 +1,150 @@
+/* Hero grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 16px 0 24px;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.text-intro-grid {
+  grid-column: 1 / 2;
+  padding-right: 16px;
+}
+
+.profile-image-grid {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Hero typography */
+.hero-headline {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+  color: var(--md-typeset-color);
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+/* Pain-point bullets — override MkDocs theme list styles */
+.hero-section .hero-bullets,
+.md-typeset .hero-bullets {
+  list-style: none !important;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.hero-section .hero-bullets li,
+.md-typeset .hero-bullets li {
+  padding: 0.25rem 0 0.25rem 1.75rem;
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--md-typeset-color);
+  line-height: 1.45;
+}
+
+.hero-section .hero-bullets li::before,
+.md-typeset .hero-bullets li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+}
+
+/* Suppress any theme-injected marker */
+.hero-section .hero-bullets li::marker,
+.md-typeset .hero-bullets li::marker {
+  content: none;
+}
+
+/* Credential line */
+.hero-credential {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+/* CTA group */
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Profile photo */
+.profile-image {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .text-intro-grid {
+    grid-row: 2;
+    grid-column: 1;
+    padding-right: 0;
+  }
+
+  .profile-image-grid {
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 320px;
+    height: 380px;
+    margin: 0 auto;
+  }
+
+  .hero-headline {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    width: 260px;
+    height: 320px;
+  }
+}

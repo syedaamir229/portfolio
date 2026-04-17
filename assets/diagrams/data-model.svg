@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="420" rx="12" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="480" y="35" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Enterprise Data Model Architecture</text>
+
+  <!-- Source Systems -->
+  <rect x="30" y="70" width="140" height="280" rx="8" fill="#f0f0f5" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="100" y="95" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a2e">Source Systems</text>
+
+  <rect x="45" y="110" width="110" height="40" rx="6" fill="#1a1a2e"/>
+  <text x="100" y="135" text-anchor="middle" font-size="10" fill="#ffffff">Subscription</text>
+
+  <rect x="45" y="160" width="110" height="40" rx="6" fill="#1a1a2e"/>
+  <text x="100" y="185" text-anchor="middle" font-size="10" fill="#ffffff">Viewing / Sessions</text>
+
+  <rect x="45" y="210" width="110" height="40" rx="6" fill="#1a1a2e"/>
+  <text x="100" y="235" text-anchor="middle" font-size="10" fill="#ffffff">Content Catalog</text>
+
+  <rect x="45" y="260" width="110" height="40" rx="6" fill="#1a1a2e"/>
+  <text x="100" y="285" text-anchor="middle" font-size="10" fill="#ffffff">Ad Delivery</text>
+
+  <rect x="45" y="310" width="110" height="30" rx="6" fill="#e8e8ee" stroke="#1a1a2e" stroke-width="1"/>
+  <text x="100" y="330" text-anchor="middle" font-size="9" fill="#1a1a2e">S3 + Delta Lake</text>
+
+  <!-- Arrow: Sources to Bronze -->
+  <line x1="170" y1="210" x2="210" y2="210" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arrow-teal)"/>
+
+  <!-- Bronze Layer -->
+  <rect x="220" y="120" width="150" height="180" rx="8" fill="#d4a574" fill-opacity="0.15" stroke="#c4955a" stroke-width="1.5"/>
+  <text x="295" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#8B6914">Bronze Layer</text>
+  <text x="295" y="162" text-anchor="middle" font-size="9" fill="#666">Raw Ingestion</text>
+
+  <rect x="235" y="175" width="120" height="24" rx="4" fill="#fff8ee" stroke="#c4955a" stroke-width="1"/>
+  <text x="295" y="192" text-anchor="middle" font-size="9" fill="#8B6914">raw_subscriptions</text>
+
+  <rect x="235" y="205" width="120" height="24" rx="4" fill="#fff8ee" stroke="#c4955a" stroke-width="1"/>
+  <text x="295" y="222" text-anchor="middle" font-size="9" fill="#8B6914">raw_sessions</text>
+
+  <rect x="235" y="235" width="120" height="24" rx="4" fill="#fff8ee" stroke="#c4955a" stroke-width="1"/>
+  <text x="295" y="252" text-anchor="middle" font-size="9" fill="#8B6914">raw_content</text>
+
+  <rect x="235" y="265" width="120" height="24" rx="4" fill="#fff8ee" stroke="#c4955a" stroke-width="1"/>
+  <text x="295" y="282" text-anchor="middle" font-size="9" fill="#8B6914">raw_ad_events</text>
+
+  <!-- Arrow: Bronze to Silver -->
+  <line x1="370" y1="210" x2="410" y2="210" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arrow-teal)"/>
+
+  <!-- Silver Layer -->
+  <rect x="420" y="80" width="170" height="260" rx="8" fill="#b0c4de" fill-opacity="0.15" stroke="#6b8dad" stroke-width="1.5"/>
+  <text x="505" y="105" text-anchor="middle" font-size="12" font-weight="600" fill="#4a6f8a">Silver Layer</text>
+  <text x="505" y="122" text-anchor="middle" font-size="9" fill="#666">Standardized Model</text>
+
+  <rect x="435" y="135" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="150" text-anchor="middle" font-size="9" fill="#4a6f8a">fact_view</text>
+
+  <rect x="435" y="162" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="177" text-anchor="middle" font-size="9" fill="#4a6f8a">fact_subscriptions</text>
+
+  <rect x="435" y="189" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="204" text-anchor="middle" font-size="9" fill="#4a6f8a">fact_ad_events</text>
+
+  <rect x="435" y="220" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="235" text-anchor="middle" font-size="9" fill="#4a6f8a">dim_subscribers</text>
+
+  <rect x="435" y="247" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="262" text-anchor="middle" font-size="9" fill="#4a6f8a">dim_content</text>
+
+  <rect x="435" y="274" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="289" text-anchor="middle" font-size="9" fill="#4a6f8a">dim_packages</text>
+
+  <rect x="435" y="301" width="140" height="22" rx="4" fill="#eef4fa" stroke="#6b8dad" stroke-width="1"/>
+  <text x="505" y="316" text-anchor="middle" font-size="9" fill="#4a6f8a">dim_devices</text>
+
+  <!-- Arrow: Silver to Gold -->
+  <line x1="590" y1="210" x2="630" y2="210" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arrow-teal)"/>
+
+  <!-- Gold Layer -->
+  <rect x="640" y="100" width="170" height="220" rx="8" fill="#0f9b8e" fill-opacity="0.1" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="725" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="#0f9b8e">Gold Layer</text>
+  <text x="725" y="142" text-anchor="middle" font-size="9" fill="#666">Aggregates &amp; Features</text>
+
+  <rect x="655" y="155" width="140" height="22" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="725" y="170" text-anchor="middle" font-size="9" fill="#0a7a6f">daily_movements</text>
+
+  <rect x="655" y="182" width="140" height="22" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="725" y="197" text-anchor="middle" font-size="9" fill="#0a7a6f">user_features</text>
+
+  <rect x="655" y="209" width="140" height="22" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="725" y="224" text-anchor="middle" font-size="9" fill="#0a7a6f">content_features</text>
+
+  <rect x="655" y="236" width="140" height="22" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="725" y="251" text-anchor="middle" font-size="9" fill="#0a7a6f">subscription_features</text>
+
+  <rect x="655" y="263" width="140" height="22" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="725" y="278" text-anchor="middle" font-size="9" fill="#0a7a6f">agg_daily_metrics</text>
+
+  <rect x="655" y="290" width="140" height="22" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="725" y="305" text-anchor="middle" font-size="9" fill="#0a7a6f">view_features</text>
+
+  <!-- Downstream consumers -->
+  <line x1="810" y1="170" x2="850" y2="170" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arrow-teal)"/>
+  <line x1="810" y1="210" x2="850" y2="210" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arrow-teal)"/>
+  <line x1="810" y1="280" x2="850" y2="280" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arrow-teal)"/>
+
+  <rect x="860" y="150" width="85" height="36" rx="6" fill="#1a1a2e"/>
+  <text x="903" y="168" text-anchor="middle" font-size="9" fill="#ffffff">Semantic</text>
+  <text x="903" y="180" text-anchor="middle" font-size="9" fill="#ffffff">Layer</text>
+
+  <rect x="860" y="196" width="85" height="28" rx="6" fill="#1a1a2e"/>
+  <text x="903" y="214" text-anchor="middle" font-size="9" fill="#ffffff">ML Features</text>
+
+  <rect x="860" y="266" width="85" height="28" rx="6" fill="#1a1a2e"/>
+  <text x="903" y="284" text-anchor="middle" font-size="9" fill="#ffffff">AI Automation</text>
+
+  <!-- Footer -->
+  <text x="480" y="400" text-anchor="middle" font-size="10" fill="#999">Databricks + PySpark + Delta Lake on AWS S3</text>
+</svg>

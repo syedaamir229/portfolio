@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="440" rx="12" fill="#ffffff"/>
+  <text x="480" y="35" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Revenue Operations Pipeline Architecture</text>
+
+  <!-- GAM API Source -->
+  <rect x="30" y="140" width="130" height="70" rx="8" fill="#1a1a2e"/>
+  <text x="95" y="170" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Google Ad</text>
+  <text x="95" y="186" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Manager API</text>
+
+  <!-- Arrow -->
+  <line x1="160" y1="175" x2="200" y2="175" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Ingestion -->
+  <rect x="210" y="110" width="140" height="130" rx="8" fill="#f0f0f5" stroke="#1a1a2e" stroke-width="1.5"/>
+  <text x="280" y="135" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a2e">Ingestion Layer</text>
+  <text x="280" y="150" text-anchor="middle" font-size="9" fill="#666">Python + Databricks</text>
+
+  <rect x="222" y="160" width="116" height="22" rx="4" fill="#e8e8ee" stroke="#1a1a2e" stroke-width="1"/>
+  <text x="280" y="175" text-anchor="middle" font-size="8" fill="#1a1a2e">Daily at 7 AM</text>
+
+  <rect x="222" y="188" width="116" height="22" rx="4" fill="#e8e8ee" stroke="#1a1a2e" stroke-width="1"/>
+  <text x="280" y="203" text-anchor="middle" font-size="8" fill="#1a1a2e">Weekly Refresh (Sun)</text>
+
+  <rect x="222" y="216" width="116" height="18" rx="4" fill="#e8e8ee" stroke="#1a1a2e" stroke-width="1"/>
+  <text x="280" y="229" text-anchor="middle" font-size="8" fill="#1a1a2e">S3 Raw Storage</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="175" x2="390" y2="175" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Pipeline boxes -->
+  <rect x="400" y="60" width="210" height="270" rx="8" fill="#0f9b8e" fill-opacity="0.08" stroke="#0f9b8e" stroke-width="1.5"/>
+  <text x="505" y="85" text-anchor="middle" font-size="12" font-weight="600" fill="#0f9b8e">Processing Pipelines</text>
+
+  <rect x="415" y="98" width="180" height="38" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="505" y="115" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Inventory Pipeline</text>
+  <text x="505" y="128" text-anchor="middle" font-size="8" fill="#666">Ad slot availability &amp; usage</text>
+
+  <rect x="415" y="144" width="180" height="38" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="505" y="161" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Impressions Pipeline</text>
+  <text x="505" y="174" text-anchor="middle" font-size="8" fill="#666">Revenue &amp; impression tracking</text>
+
+  <rect x="415" y="190" width="180" height="38" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="505" y="207" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">VAST Errors Pipeline</text>
+  <text x="505" y="220" text-anchor="middle" font-size="8" fill="#666">Error categorization &amp; tracking</text>
+
+  <rect x="415" y="236" width="180" height="38" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="505" y="253" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Delivery Pacing Pipeline</text>
+  <text x="505" y="266" text-anchor="middle" font-size="8" fill="#666">Booked vs. delivered tracking</text>
+
+  <rect x="415" y="282" width="180" height="38" rx="6" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="505" y="299" text-anchor="middle" font-size="10" font-weight="500" fill="#0a7a6f">Content Mapping</text>
+  <text x="505" y="312" text-anchor="middle" font-size="8" fill="#666">Media ID enrichment</text>
+
+  <!-- Arrows to outputs -->
+  <line x1="610" y1="140" x2="660" y2="140" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="610" y1="210" x2="660" y2="210" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="610" y1="255" x2="660" y2="340" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Gold / Semantic Layer output -->
+  <rect x="670" y="90" width="145" height="100" rx="8" fill="#1a1a2e"/>
+  <text x="743" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Semantic Model</text>
+  <text x="743" y="135" text-anchor="middle" font-size="9" fill="#16c2b0">SSAS Tabular</text>
+
+  <line x1="815" y1="140" x2="855" y2="140" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="865" y="115" width="80" height="50" rx="6" fill="#1a1a2e"/>
+  <text x="905" y="138" text-anchor="middle" font-size="10" fill="#ffffff">Power BI</text>
+  <text x="905" y="153" text-anchor="middle" font-size="8" fill="#16c2b0">Dashboards</text>
+
+  <!-- Power BI output connected to Semantic -->
+  <rect x="670" y="200" width="145" height="45" rx="8" fill="#1a1a2e"/>
+  <text x="743" y="220" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Gold Tables</text>
+  <text x="743" y="235" text-anchor="middle" font-size="9" fill="#16c2b0">Delta Lake</text>
+
+  <!-- Slack Alerting -->
+  <rect x="670" y="320" width="145" height="55" rx="8" fill="#E8912D" fill-opacity="0.15" stroke="#E8912D" stroke-width="1.5"/>
+  <text x="743" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#C07722">Slack Alerts</text>
+  <text x="743" y="360" text-anchor="middle" font-size="9" fill="#666">Pacing + Error Monitoring</text>
+
+  <!-- Footer -->
+  <text x="480" y="425" text-anchor="middle" font-size="10" fill="#999">Databricks + Python + Google Ad Manager API + Slack API + Power BI</text>
+</svg>

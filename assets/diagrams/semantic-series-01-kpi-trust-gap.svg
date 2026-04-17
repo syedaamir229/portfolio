@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="420" rx="12" fill="#ffffff"/>
+  <text x="460" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">From KPI Conflicts to Trusted Metrics</text>
+
+  <rect x="40" y="72" width="250" height="300" rx="10" fill="#f5f6fa" stroke="#d8dbe6"/>
+  <text x="165" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Before Semantic Layer</text>
+
+  <rect x="58" y="116" width="214" height="56" rx="8" fill="#ffffff" stroke="#d8dbe6"/>
+  <text x="74" y="139" font-size="10" fill="#1a1a2e">Marketing Report</text>
+  <text x="74" y="154" font-size="9" fill="#c24040">churn_rate = lost_subs / active_subs</text>
+
+  <rect x="58" y="186" width="214" height="56" rx="8" fill="#ffffff" stroke="#d8dbe6"/>
+  <text x="74" y="209" font-size="10" fill="#1a1a2e">Finance Report</text>
+  <text x="74" y="224" font-size="9" fill="#c24040">churn_rate = cancels / billed_base</text>
+
+  <rect x="58" y="256" width="214" height="56" rx="8" fill="#ffffff" stroke="#d8dbe6"/>
+  <text x="74" y="279" font-size="10" fill="#1a1a2e">Product Report</text>
+  <text x="74" y="294" font-size="9" fill="#c24040">churn_rate = profile_churn / viewers</text>
+
+  <text x="165" y="342" text-anchor="middle" font-size="10" fill="#7b8096">Result: conflicting numbers and low trust</text>
+
+  <line x1="290" y1="220" x2="365" y2="220" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="365" y="122" width="190" height="196" rx="10" fill="#1a1a2e" stroke="#0f9b8e" stroke-width="2"/>
+  <text x="460" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Semantic Layer</text>
+  <rect x="387" y="168" width="146" height="32" rx="6" fill="#2a2a4e" stroke="#0f9b8e"/>
+  <text x="460" y="188" text-anchor="middle" font-size="9" fill="#16c2b0">Governed DAX Measures</text>
+  <rect x="387" y="210" width="146" height="32" rx="6" fill="#2a2a4e" stroke="#0f9b8e"/>
+  <text x="460" y="230" text-anchor="middle" font-size="9" fill="#16c2b0">Single KPI Definitions</text>
+  <rect x="387" y="252" width="146" height="32" rx="6" fill="#2a2a4e" stroke="#0f9b8e"/>
+  <text x="460" y="272" text-anchor="middle" font-size="9" fill="#16c2b0">Shared Time Logic</text>
+
+  <line x1="555" y1="220" x2="630" y2="220" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="630" y="72" width="250" height="300" rx="10" fill="#eef9f7" stroke="#9ed9d2"/>
+  <text x="755" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#0a7a6f">After Semantic Layer</text>
+
+  <rect x="648" y="116" width="214" height="56" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="664" y="139" font-size="10" fill="#1a1a2e">Marketing Dashboard</text>
+  <text x="664" y="154" font-size="9" fill="#0a7a6f">Uses governed churn_rate</text>
+
+  <rect x="648" y="186" width="214" height="56" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="664" y="209" font-size="10" fill="#1a1a2e">Finance Dashboard</text>
+  <text x="664" y="224" font-size="9" fill="#0a7a6f">Uses governed churn_rate</text>
+
+  <rect x="648" y="256" width="214" height="56" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="664" y="279" font-size="10" fill="#1a1a2e">Product Dashboard</text>
+  <text x="664" y="294" font-size="9" fill="#0a7a6f">Uses governed churn_rate</text>
+
+  <text x="755" y="342" text-anchor="middle" font-size="10" fill="#0a7a6f">Result: aligned metrics and faster decisions</text>
+</svg>

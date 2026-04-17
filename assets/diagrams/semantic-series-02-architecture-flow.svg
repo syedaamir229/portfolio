@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="430" rx="12" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Semantic Layer Technical Architecture</text>
+
+  <rect x="30" y="82" width="180" height="280" rx="10" fill="#f5f6fa" stroke="#d8dbe6"/>
+  <text x="120" y="106" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Databricks Gold</text>
+  <rect x="48" y="126" width="144" height="26" rx="5" fill="#ffffff" stroke="#d8dbe6"/><text x="120" y="143" text-anchor="middle" font-size="9" fill="#1a1a2e">fact_subscriptions</text>
+  <rect x="48" y="160" width="144" height="26" rx="5" fill="#ffffff" stroke="#d8dbe6"/><text x="120" y="177" text-anchor="middle" font-size="9" fill="#1a1a2e">fact_engagement</text>
+  <rect x="48" y="194" width="144" height="26" rx="5" fill="#ffffff" stroke="#d8dbe6"/><text x="120" y="211" text-anchor="middle" font-size="9" fill="#1a1a2e">fact_ad_events</text>
+  <rect x="48" y="228" width="144" height="26" rx="5" fill="#ffffff" stroke="#d8dbe6"/><text x="120" y="245" text-anchor="middle" font-size="9" fill="#1a1a2e">dim_subscriber</text>
+  <rect x="48" y="262" width="144" height="26" rx="5" fill="#ffffff" stroke="#d8dbe6"/><text x="120" y="279" text-anchor="middle" font-size="9" fill="#1a1a2e">dim_content</text>
+  <rect x="48" y="296" width="144" height="26" rx="5" fill="#ffffff" stroke="#d8dbe6"/><text x="120" y="313" text-anchor="middle" font-size="9" fill="#1a1a2e">staging helpers</text>
+
+  <line x1="210" y1="222" x2="286" y2="222" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow2)"/>
+
+  <rect x="286" y="100" width="190" height="245" rx="10" fill="#eef9f7" stroke="#9ed9d2"/>
+  <text x="381" y="124" text-anchor="middle" font-size="12" font-weight="700" fill="#0a7a6f">Model Build Layer</text>
+  <rect x="304" y="142" width="154" height="35" rx="6" fill="#ffffff" stroke="#9ed9d2"/><text x="381" y="164" text-anchor="middle" font-size="9" fill="#0a7a6f">Tabular Project (SSDT)</text>
+  <rect x="304" y="188" width="154" height="35" rx="6" fill="#ffffff" stroke="#9ed9d2"/><text x="381" y="210" text-anchor="middle" font-size="9" fill="#0a7a6f">DAX Measure Layer</text>
+  <rect x="304" y="234" width="154" height="35" rx="6" fill="#ffffff" stroke="#9ed9d2"/><text x="381" y="256" text-anchor="middle" font-size="9" fill="#0a7a6f">Best Practice Validation</text>
+  <rect x="304" y="280" width="154" height="35" rx="6" fill="#ffffff" stroke="#9ed9d2"/><text x="381" y="302" text-anchor="middle" font-size="9" fill="#0a7a6f">Deployment Artifact</text>
+
+  <line x1="476" y1="222" x2="552" y2="222" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow2)"/>
+
+  <rect x="552" y="120" width="180" height="205" rx="10" fill="#1a1a2e" stroke="#0f9b8e" stroke-width="2"/>
+  <text x="642" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Semantic Model</text>
+  <rect x="570" y="165" width="144" height="32" rx="6" fill="#2a2a4e" stroke="#0f9b8e"/><text x="642" y="185" text-anchor="middle" font-size="9" fill="#16c2b0">KPI Definitions</text>
+  <rect x="570" y="207" width="144" height="32" rx="6" fill="#2a2a4e" stroke="#0f9b8e"/><text x="642" y="227" text-anchor="middle" font-size="9" fill="#16c2b0">Role Security</text>
+  <rect x="570" y="249" width="144" height="32" rx="6" fill="#2a2a4e" stroke="#0f9b8e"/><text x="642" y="269" text-anchor="middle" font-size="9" fill="#16c2b0">Incremental Partitions</text>
+
+  <line x1="732" y1="222" x2="808" y2="222" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow2)"/>
+
+  <rect x="808" y="96" width="122" height="255" rx="10" fill="#f5f6fa" stroke="#d8dbe6"/>
+  <text x="869" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a2e">Consumers</text>
+  <rect x="820" y="138" width="98" height="42" rx="6" fill="#ffffff" stroke="#d8dbe6"/><text x="869" y="161" text-anchor="middle" font-size="9" fill="#1a1a2e">Power BI Live</text>
+  <rect x="820" y="191" width="98" height="42" rx="6" fill="#ffffff" stroke="#d8dbe6"/><text x="869" y="214" text-anchor="middle" font-size="9" fill="#1a1a2e">Executive Dashboards</text>
+  <rect x="820" y="244" width="98" height="42" rx="6" fill="#ffffff" stroke="#d8dbe6"/><text x="869" y="267" text-anchor="middle" font-size="9" fill="#1a1a2e">Ad-hoc Analysis</text>
+
+  <text x="480" y="401" text-anchor="middle" font-size="10" fill="#7b8096">Curated from a production runbook, generalized for public sharing</text>
+</svg>

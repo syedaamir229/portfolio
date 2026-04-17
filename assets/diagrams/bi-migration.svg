@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arw" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="340" rx="12" fill="#ffffff"/>
+  <text x="450" y="35" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">BI Modernization Roadmap</text>
+
+  <!-- Timeline arrow -->
+  <line x1="50" y1="70" x2="850" y2="70" stroke="#d0d0d0" stroke-width="2" marker-end="url(#arw)"/>
+  <text x="850" y="63" text-anchor="end" font-size="9" fill="#999">Timeline</text>
+
+  <!-- Phase 1 -->
+  <rect x="60" y="90" width="240" height="210" rx="10" fill="#0f9b8e" fill-opacity="0.06" stroke="#0f9b8e" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="180" cy="70" r="8" fill="#0f9b8e" fill-opacity="0.3" stroke="#0f9b8e" stroke-width="2"/>
+  <text x="180" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#0f9b8e">Phase 1</text>
+  <text x="180" y="133" text-anchor="middle" font-size="10" fill="#1a1a2e">Tool Migration</text>
+  <text x="180" y="148" text-anchor="middle" font-size="9" fill="#666">Jan - May 2023</text>
+
+  <rect x="80" y="165" width="90" height="40" rx="6" fill="#e8e8ee" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="125" y="185" text-anchor="middle" font-size="10" fill="#666">Tableau</text>
+  <text x="125" y="198" text-anchor="middle" font-size="8" fill="#999">(Legacy)</text>
+
+  <line x1="175" y1="185" x2="195" y2="185" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arw)"/>
+
+  <rect x="200" y="165" width="85" height="40" rx="6" fill="#1a1a2e"/>
+  <text x="243" y="185" text-anchor="middle" font-size="10" fill="#ffffff">Power BI</text>
+  <text x="243" y="198" text-anchor="middle" font-size="8" fill="#16c2b0">(New)</text>
+
+  <rect x="80" y="218" width="200" height="28" rx="4" fill="#fff8ee" stroke="#c4955a" stroke-width="1"/>
+  <text x="180" y="236" text-anchor="middle" font-size="9" fill="#8B6914">Legacy data architecture unchanged</text>
+
+  <rect x="80" y="255" width="200" height="30" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="180" y="270" text-anchor="middle" font-size="9" fill="#0a7a6f">Reporting continuity</text>
+  <text x="180" y="281" text-anchor="middle" font-size="8" fill="#0a7a6f">maintained throughout</text>
+
+  <!-- Phase 2 -->
+  <rect x="330" y="90" width="240" height="210" rx="10" fill="#0f9b8e" fill-opacity="0.12" stroke="#0f9b8e" stroke-width="1.5"/>
+  <circle cx="450" cy="70" r="8" fill="#0f9b8e" fill-opacity="0.5" stroke="#0f9b8e" stroke-width="2"/>
+  <text x="450" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#0f9b8e">Phase 2</text>
+  <text x="450" y="133" text-anchor="middle" font-size="10" fill="#1a1a2e">Data Layer Alignment</text>
+  <text x="450" y="148" text-anchor="middle" font-size="9" fill="#666">2023 - 2024</text>
+
+  <rect x="350" y="165" width="90" height="40" rx="6" fill="#e8e8ee" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="395" y="185" text-anchor="middle" font-size="10" fill="#666">Legacy</text>
+  <text x="395" y="198" text-anchor="middle" font-size="8" fill="#999">Sources</text>
+
+  <line x1="445" y1="185" x2="465" y2="185" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arw)"/>
+
+  <rect x="470" y="165" width="85" height="40" rx="6" fill="#1a1a2e"/>
+  <text x="513" y="181" text-anchor="middle" font-size="9" fill="#ffffff">Data Model</text>
+  <text x="513" y="194" text-anchor="middle" font-size="9" fill="#16c2b0">2.0</text>
+
+  <rect x="350" y="218" width="200" height="28" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="450" y="236" text-anchor="middle" font-size="9" fill="#0a7a6f">Databricks + Delta Lake foundation</text>
+
+  <rect x="350" y="255" width="200" height="30" rx="4" fill="#e6f7f5" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="450" y="270" text-anchor="middle" font-size="9" fill="#0a7a6f">Reports reconnected to</text>
+  <text x="450" y="281" text-anchor="middle" font-size="8" fill="#0a7a6f">unified Silver/Gold model</text>
+
+  <!-- Phase 3 -->
+  <rect x="600" y="90" width="240" height="210" rx="10" fill="#1a1a2e" stroke="#0f9b8e" stroke-width="2"/>
+  <circle cx="720" cy="70" r="8" fill="#0f9b8e" stroke="#0f9b8e" stroke-width="2"/>
+  <text x="720" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#0f9b8e">Phase 3</text>
+  <text x="720" y="133" text-anchor="middle" font-size="10" fill="#ffffff">Metric Governance</text>
+  <text x="720" y="148" text-anchor="middle" font-size="9" fill="#16c2b0">2024</text>
+
+  <rect x="620" y="165" width="90" height="40" rx="6" fill="#2a2a4e" stroke="#666" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="665" y="181" text-anchor="middle" font-size="9" fill="#aaa">Report-Level</text>
+  <text x="665" y="194" text-anchor="middle" font-size="9" fill="#aaa">Measures</text>
+
+  <line x1="715" y1="185" x2="735" y2="185" stroke="#0f9b8e" stroke-width="2" marker-end="url(#arw)"/>
+
+  <rect x="740" y="165" width="85" height="40" rx="6" fill="#0f9b8e"/>
+  <text x="783" y="181" text-anchor="middle" font-size="9" fill="#ffffff">Semantic</text>
+  <text x="783" y="194" text-anchor="middle" font-size="9" fill="#ffffff">Layer</text>
+
+  <rect x="620" y="218" width="200" height="28" rx="4" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="720" y="236" text-anchor="middle" font-size="9" fill="#16c2b0">SSAS Tabular + governed DAX</text>
+
+  <rect x="620" y="255" width="200" height="30" rx="4" fill="#2a2a4e" stroke="#0f9b8e" stroke-width="1"/>
+  <text x="720" y="270" text-anchor="middle" font-size="9" fill="#16c2b0">100+ KPIs standardized,</text>
+  <text x="720" y="281" text-anchor="middle" font-size="8" fill="#16c2b0">single source of truth</text>
+
+  <!-- Footer -->
+  <text x="450" y="328" text-anchor="middle" font-size="10" fill="#999">Phased modernization with zero reporting downtime</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" font-family="Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="arrow5" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f9b8e"/>
+    </marker>
+  </defs>
+
+  <rect width="940" height="430" rx="12" fill="#ffffff"/>
+  <text x="470" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Refresh Pipeline and Recovery Workflow</text>
+
+  <rect x="40" y="100" width="860" height="126" rx="10" fill="#eef9f7" stroke="#9ed9d2"/>
+  <text x="470" y="124" text-anchor="middle" font-size="12" font-weight="700" fill="#0a7a6f">Normal Daily Refresh Path</text>
+
+  <rect x="70" y="145" width="120" height="58" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="130" y="169" text-anchor="middle" font-size="9" fill="#0a7a6f">Upstream Data</text>
+  <text x="130" y="184" text-anchor="middle" font-size="9" fill="#0a7a6f">Jobs Complete</text>
+
+  <rect x="220" y="145" width="120" height="58" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="280" y="169" text-anchor="middle" font-size="9" fill="#0a7a6f">Load Staging</text>
+  <text x="280" y="184" text-anchor="middle" font-size="9" fill="#0a7a6f">Tables</text>
+
+  <rect x="370" y="145" width="120" height="58" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="430" y="169" text-anchor="middle" font-size="9" fill="#0a7a6f">Create Partitions</text>
+  <text x="430" y="184" text-anchor="middle" font-size="9" fill="#0a7a6f">for Fact Tables</text>
+
+  <rect x="520" y="145" width="120" height="58" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="580" y="169" text-anchor="middle" font-size="9" fill="#0a7a6f">Model Refresh</text>
+  <text x="580" y="184" text-anchor="middle" font-size="9" fill="#0a7a6f">and Processing</text>
+
+  <rect x="670" y="145" width="120" height="58" rx="8" fill="#ffffff" stroke="#9ed9d2"/>
+  <text x="730" y="169" text-anchor="middle" font-size="9" fill="#0a7a6f">Partition Merge</text>
+  <text x="730" y="184" text-anchor="middle" font-size="9" fill="#0a7a6f">and Cleanup</text>
+
+  <line x1="190" y1="174" x2="220" y2="174" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <line x1="340" y1="174" x2="370" y2="174" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <line x1="490" y1="174" x2="520" y2="174" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <line x1="640" y1="174" x2="670" y2="174" stroke="#0f9b8e" stroke-width="2.5" marker-end="url(#arrow5)"/>
+
+  <rect x="40" y="250" width="860" height="142" rx="10" fill="#fef6f6" stroke="#efc3c3"/>
+  <text x="470" y="274" text-anchor="middle" font-size="12" font-weight="700" fill="#a54343">Missed-Day Recovery Path</text>
+
+  <rect x="70" y="295" width="250" height="72" rx="8" fill="#ffffff" stroke="#efc3c3"/>
+  <text x="86" y="319" font-size="9" fill="#a54343">1. Confirm upstream dependencies are complete</text>
+  <text x="86" y="335" font-size="9" fill="#a54343">2. Backfill missing date range in staging loads</text>
+  <text x="86" y="351" font-size="9" fill="#a54343">3. Validate row counts before model processing</text>
+
+  <rect x="345" y="295" width="250" height="72" rx="8" fill="#ffffff" stroke="#efc3c3"/>
+  <text x="361" y="319" font-size="9" fill="#a54343">4. Reset last-partition pointer metadata safely</text>
+  <text x="361" y="335" font-size="9" fill="#a54343">5. Recreate only impacted fact partitions</text>
+  <text x="361" y="351" font-size="9" fill="#a54343">6. Process model and rerun validation suite</text>
+
+  <rect x="620" y="295" width="250" height="72" rx="8" fill="#ffffff" stroke="#efc3c3"/>
+  <text x="636" y="319" font-size="9" fill="#a54343">7. Check dashboard deltas against baseline</text>
+  <text x="636" y="335" font-size="9" fill="#a54343">8. Publish incident note and prevention action</text>
+  <text x="636" y="351" font-size="9" fill="#a54343">9. Resume standard incremental schedule</text>
+</svg>

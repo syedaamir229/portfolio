@@ -1,0 +1,350 @@
+/* Light theme custom colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #1a1a2e;
+  --md-accent-fg-color: #0f9b8e;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+  --md-footer-bg-color: var(--md-primary-fg-color);
+}
+
+/* Dark theme custom colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0f0f23;
+  --md-default-bg-color: #0a0a1a;
+  --md-accent-fg-color: #16c2b0;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
+
+/* Primary button — teal accent, both modes */
+.md-button--primary {
+  background-color: var(--md-accent-fg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+  color: #ffffff !important;
+}
+
+.md-button--primary:hover {
+  background-color: #0b7d73 !important;
+  border-color: #0b7d73 !important;
+  color: #ffffff !important;
+}
+
+/* Secondary/outline button — teal outline, both modes */
+.md-button:not(.md-button--primary) {
+  border-color: var(--md-accent-fg-color) !important;
+  color: var(--md-accent-fg-color) !important;
+  background-color: transparent !important;
+}
+
+.md-button:not(.md-button--primary):hover {
+  border-color: #0b7d73 !important;
+  color: #0b7d73 !important;
+  background-color: rgba(15, 155, 142, 0.08) !important;
+}
+
+/* Footer Section */
+.md-footer {
+  background-color: #0a0a1a;
+}
+
+.md-footer-meta {
+  background-color: #0f0f23;
+}
+
+/* Architecture diagrams */
+.diagram-embed {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+figure {
+    margin: 1.5rem 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--md-default-fg-color--light);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Certification badges */
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.cert-grid a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cert-grid img {
+    transition: transform 0.2s ease;
+    border-radius: 6px;
+}
+
+.cert-grid img:hover {
+    transform: scale(1.05);
+}
+
+.cert-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background-color: var(--md-accent-fg-color);
+    color: #ffffff;
+}
+
+/* Project capability tags on portfolio cards */
+.project-tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-right: 0.3rem;
+    margin-top: 0.4rem;
+    border: 1px solid var(--md-accent-fg-color);
+    color: var(--md-accent-fg-color);
+}
+
+/* Proof chips strip on Projects landing page — flex layout so chips wrap
+   cleanly on mobile without separator fragments being stranded at line ends. */
+.proof-chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 1rem;
+    padding: 0.7rem 1rem;
+    margin: 0.8rem 0 1.2rem;
+    background-color: rgba(15, 155, 142, 0.08);
+    border: 1px solid rgba(15, 155, 142, 0.25);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--md-default-fg-color--light);
+}
+
+.proof-chips > span {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+}
+
+.proof-chips > span:not(:last-child)::after {
+    content: "·";
+    margin-left: 1rem;
+    color: var(--md-default-fg-color--lighter);
+}
+
+[data-md-color-scheme="slate"] .proof-chips {
+    background-color: rgba(22, 194, 176, 0.06);
+    border-color: rgba(22, 194, 176, 0.2);
+}
+
+.cert-badge.past {
+    background-color: transparent;
+    border: 1px solid var(--md-default-fg-color--lighter);
+    color: var(--md-default-fg-color--light);
+    margin-bottom: 0.25rem;
+}
+
+/* Metrics Strip */
+.metrics-strip {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    background-color: var(--md-primary-fg-color);
+    border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] .metrics-strip {
+    background-color: rgba(22, 194, 176, 0.08);
+    border: 1px solid rgba(22, 194, 176, 0.2);
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.metric-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--md-accent-fg-color);
+    line-height: 1;
+}
+
+[data-md-color-scheme="default"] .metric-number {
+    color: #16c2b0;
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 0.3rem;
+}
+
+[data-md-color-scheme="slate"] .metric-label {
+    color: var(--md-default-fg-color--light);
+}
+
+/* Section spacing — breathing room between homepage sections */
+.md-typeset h2 {
+    margin-top: 1.75rem;
+}
+
+/* Global card styling — polished rounded corners + subtle border */
+.md-typeset .grid.cards > ul > li {
+    border-radius: 12px;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Accent border-left on grid cards (results + why-work sections) */
+.md-typeset .grid.cards.what-changed > ul > li {
+    border-left: 3px solid var(--md-accent-fg-color);
+}
+
+/* Hide header logo — site name is sufficient */
+.md-header__button.md-logo {
+    display: none;
+}
+
+/* Capability/results card grids — single row regardless of card count.
+   At ~976px content width, fits 3 cards (Results) or 4 cards (Why Work
+   With Me) on one row. Material's default 16rem floor caps at 3 columns;
+   narrowing to 13rem lets 4 fit, and auto-fit collapses unused tracks so
+   3-card sections still fill the row. Material applies `display: contents`
+   to the inner <ul>, so the grid container is the outer .grid div. */
+.md-typeset .grid.cards.what-changed {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+
+/* Compact grid — same density as what-changed but without the teal left
+   border. Used for Earlier Work on the Projects page so 8 cards fit 4
+   across on desktop rather than the default 3. */
+.md-typeset .grid.cards.compact {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+
+/* Home page CTA — compact alternative to grid-card wrapping */
+.cta-card {
+    background: rgba(15, 155, 142, 0.04);
+    border: 1px solid rgba(15, 155, 142, 0.15);
+    border-radius: 12px;
+    padding: 1.1rem 1.5rem;
+    margin: 2rem 0 0;
+}
+
+.cta-card h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .cta-card {
+    background: rgba(22, 194, 176, 0.03);
+    border-color: rgba(22, 194, 176, 0.1);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Rounded tables — match the rest of the surfaces on the site */
+.md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Case-study admonitions — teal palette to match site surfaces.
+   Only used on project detail pages (success = Outcome, abstract = Case
+   Study Summary), so these overrides are scoped by admonition type rather
+   than by page. */
+.md-typeset .admonition.success,
+.md-typeset details.success,
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+    border-radius: 8px;
+    border: 1px solid rgba(15, 155, 142, 0.25);
+    border-left: 4px solid var(--md-accent-fg-color);
+    background-color: rgba(15, 155, 142, 0.04);
+}
+
+.md-typeset .admonition.success > .admonition-title,
+.md-typeset details.success > summary,
+.md-typeset .admonition.abstract > .admonition-title,
+.md-typeset details.abstract > summary {
+    background-color: rgba(15, 155, 142, 0.08);
+    border-bottom: none;
+}
+
+.md-typeset .admonition.success > .admonition-title::before,
+.md-typeset details.success > summary::before,
+.md-typeset .admonition.abstract > .admonition-title::before,
+.md-typeset details.abstract > summary::before {
+    background-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.success,
+[data-md-color-scheme="slate"] .md-typeset details.success,
+[data-md-color-scheme="slate"] .md-typeset .admonition.abstract,
+[data-md-color-scheme="slate"] .md-typeset details.abstract {
+    border-color: rgba(22, 194, 176, 0.2);
+    background-color: rgba(22, 194, 176, 0.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.success > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset details.success > summary,
+[data-md-color-scheme="slate"] .md-typeset .admonition.abstract > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset details.abstract > summary {
+    background-color: rgba(22, 194, 176, 0.06);
+}
+
+/* Glightbox — scale clicked images up to fill the viewport while keeping
+   aspect ratio. Without this, small SVG diagrams render at natural size
+   and look tiny inside the dark overlay. */
+.gslide-image img {
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+    width: auto;
+    height: auto;
+}
